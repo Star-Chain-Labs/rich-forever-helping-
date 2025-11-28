@@ -78,7 +78,7 @@ const Layout = () => {
     //   label: "My Downline",
     //   icon: <FaArrowsDownToPeople />,
     // },
-    { path: Routers.Member, label: "Referral Members", icon: <FaUsers /> },
+    // { path: Routers.Member, label: "Referral Members", icon: <FaUsers /> },
     { path: Routers.MyInvestment, label: "Add Fund", icon: <FaMoneyBill /> },
     { path: Routers.AllHelpingPlans, label: "Helping Plan", icon: <FaMoneyBill /> },
     { path: Routers.HelpingReferral, label: "My Referrals", icon: <Users /> },
@@ -290,7 +290,7 @@ const Layout = () => {
           </nav>
 
           {/* Logout Button */}
-          <div className="px-4 py-2 space-y-1">
+          <div className="px-4 py-2 space-y-1 bg-white">
             {actionButtons.map(({ label, icon, bgColor, func }, index) => (
               <div key={index} className="p-2">
                 <button

@@ -15,6 +15,8 @@ import { useDispatch } from "react-redux";
 import { setUser } from "../../../store/slice/userSlice";
 import LoadingSpinner from "../../../Component/LoadingSpinner";
 import register from "../../../assets/images/register.jpg";
+import { MdRemoveRedEye } from "react-icons/md";
+import { FaEyeSlash } from "react-icons/fa";
 const Register = () => {
   const [formData, setFormData] = useState({
     sponsorId: "",
@@ -29,6 +31,7 @@ const Register = () => {
   const [isOtpOpen, setIsOtpOpen] = useState(false);
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [searchParam] = useSearchParams();
@@ -182,8 +185,8 @@ const Register = () => {
             className="w-full h-[6rem] object-cover"
           />
         </Link>
-        <h2 className="text-3xl font-bold text-gray-700 text-center mb-6">
-          Register
+        <h2 className="text-xl md:text-2xl font-bold text-gray-700 text-center mb-6 mt-2">
+          Rich Helping Register
         </h2>
         <form
           onSubmit={handleRegister}
@@ -255,7 +258,7 @@ const Register = () => {
             {/* Password */}
             <div className="relative w-full">
               <input
-                type="password"
+                type={showPassword ? "password" : "text"}
                 name="password"
                 placeholder="Password"
                 value={formData.password}
@@ -263,12 +266,17 @@ const Register = () => {
                 className="w-full p-3 border rounded-lg outline-none focus:ring-1 focus:ring-bg-color focus:border-bg-color transition"
                 required
               />
+              <span 
+                className="absolute right-3 top-3 cursor-pointer text-gray-600" onClick={() =>setShowPassword((prev)=>!prev)}
+                >
+                 {showPassword ? <MdRemoveRedEye size={20} /> : <FaEyeSlash size={20} />}
+              </span>
             </div>
 
             {/* Confirm Password */}
             <div className="relative w-full">
               <input
-                type="password"
+               type={showPassword ? "password" : "text"}
                 name="confirmPassword"
                 placeholder="Confirm Password"
                 value={formData.confirmPassword}
@@ -276,6 +284,11 @@ const Register = () => {
                 className="w-full p-3 border rounded-lg outline-none focus:ring-1 focus:ring-bg-color focus:border-bg-color transition"
                 required
               />
+              <span 
+                className="absolute right-3 top-3 cursor-pointer text-gray-600" onClick={() =>setShowPassword((prev)=>!prev)}
+                >
+                 {showPassword ? <MdRemoveRedEye size={20} /> : <FaEyeSlash size={20} />}
+              </span>
               {errors.confirmPassword && (
                 <p className="text-red-500 text-xs">
                   {errors.confirmPassword}

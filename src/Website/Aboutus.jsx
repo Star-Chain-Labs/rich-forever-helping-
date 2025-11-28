@@ -17,12 +17,12 @@ const Aboutus = () => {
     {
       icon: <FaBalanceScale className="text-3xl text-bg-color" />,
       title: "Withdrawal",
-      desc: "TDS 5% and Admin Charge 10%. Two directs compulsory for binary bonus (1:2 OR 2:2, then 1:1).",
+      desc: " Two directs compulsory for binary bonus",
     },
     {
       icon: <FaUserFriends className="text-3xl text-bg-color" />,
       title: "Direct Sponsor Income",
-      desc: "10% Direct Sponsor Income with no capping on earnings.",
+      desc: "Direct Sponsor Income with no capping on earnings.",
     },
     {
       icon: <FaChartLine className="text-3xl text-bg-color" />,

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { changePassword } from "../../../api/user.api";
 import { FaEyeSlash } from "react-icons/fa";
 import { MdRemoveRedEye } from "react-icons/md";
+import Footer1 from "../../../Component/Footer1";
 
 const ChangePassword = () => {
   const [formData, setFormData] = useState({
@@ -76,7 +77,8 @@ const ChangePassword = () => {
   );
 
   return (
-    <div className="flex justify-center items-center py-[5rem] bg-gray-100 px-4">
+    <>
+    <div className="flex justify-center items-center py-[5rem] bg-gray-50 px-4">
       <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-6">
         <h2 className="text-2xl font-bold text-gray-700 mb-4 text-center">
           Change Password
@@ -102,7 +104,7 @@ const ChangePassword = () => {
             )}
           </div>
 
-          <div className="text-right">
+          {/* <div className="text-right">
             <button
               type="button"
               onClick={() => navigate("/forgot-password")}
@@ -110,7 +112,7 @@ const ChangePassword = () => {
             >
               Forgot old password?
             </button>
-          </div>
+          </div> */}
 
           <button
             type="submit"
@@ -120,7 +122,10 @@ const ChangePassword = () => {
           </button>
         </form>
       </div>
+      
     </div>
+    <Footer1/>
+    </>
   );
 };
 

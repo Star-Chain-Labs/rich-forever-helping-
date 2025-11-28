@@ -48,7 +48,7 @@ const ForgotPassword = () => {
       {loading && <PageLoader loading={loading} />}
 
       <div className="flex justify-center items-center min-h-screen bg-green-100 px-4">
-        <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-6">
+        <div className="w-full max-w-lg  bg-white shadow-lg rounded-2xl p-6">
           <h2 className="text-2xl font-bold text-gray-700 mb-4 text-center">
             Forgot Password
           </h2>

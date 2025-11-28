@@ -47,6 +47,7 @@ import UserRankIncome from './UserPanel/pages/income/UserRankIncome';
 import HelpingIncomeHistory from './UserPanel/pages/HelpingIncomeHistory/HelpingIncomeHistory';
 import AllHelpingPlans from './UserPanel/pages/HelpingPlan/AllHelpingPlans';
 import MyhelpingReffreral from './UserPanel/pages/Payout/MyhelpingReffreral';
+import PublicRoute from './utils/PublicRoute';
 // import BonanzaRank from './UserPanel/pages/Payout/BonanzaRank';
 const RouterPages = () => {
     return (
@@ -54,14 +55,33 @@ const RouterPages = () => {
             <ScrollToTop />
             <Routes>
                 <Route path={Routers.webiste} element={<LandingPage />} />
-                <Route path={Routers.Login} element={<Login />} />
+                {/* <Route path={Routers.Login} element={<Login />} />
                 <Route path={Routers.Register} element={<Register />} />
-                <Route path={Routers.ForgotPassword} element={<ForgotPassword />} />
+                <Route path={Routers.ForgotPassword} element={<ForgotPassword />} /> */}
+                <Route path={Routers.Login} element={
+                        <PublicRoute>
+                            <Login />
+                        </PublicRoute>
+                    }
+                />
+                <Route path={Routers.Register} element={
+                        <PublicRoute>
+                            <Register />
+                        </PublicRoute>
+                    }
+                />
+                <Route path={Routers.ForgotPassword} element={
+                        <PublicRoute>
+                            <ForgotPassword />
+                        </PublicRoute>
+                    }
+                />
+
                 <Route path={Routers.About} element={<MainLayout inner={<Aboutus />} />} />
                 <Route path={Routers.Contact} element={<MainLayout inner={<ContactUs />} />} />
                 <Route path={Routers.Services} element={<MainLayout inner={<Services />} />} />
                 <Route path={Routers.ProductDetails} element={<ProductDetailsPage />} />
-                <Route path={Routers.AllProducts} element={<MainLayout inner={<AllProducts/>} />} />
+                <Route path={Routers.AllProducts} element={<MainLayout inner={<AllProducts />} />} />
                 <Route path={Routers.Cart} element={<CartPage />} />
                 <Route path={Routers.Checkout} element={<CheckoutPage />} />
                 <Route
@@ -80,7 +100,7 @@ const RouterPages = () => {
                     {/* <Route path={Routers.BonnzaRank} element={<BonanzaRank />} /> */}
                     <Route path={Routers.MyProfile} element={<MyProfile />} />
                     <Route path={Routers.changePassword} element={<ChangePassword />} />
-                   
+
                     <Route path={Routers.Member} element={<ReferralMembers />} />
                     <Route path={Routers.OrderHistory} element={<OrderHistoryReport />} />
                     <Route path={Routers.MyDownlines} element={<MyDownlines />} />

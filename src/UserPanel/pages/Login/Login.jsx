@@ -85,8 +85,8 @@ const Login = () => {
           />
         </Link>
 
-        <h2 className="text-3xl font-bold text-gray-700 text-center mb-4">
-          Login
+        <h2 className="text-xl font-bold text-gray-700 text-center mb-4 mt-2">
+         Rich Helping Login
         </h2>
 
         <form onSubmit={handleLogin} className="space-y-4 w-full">

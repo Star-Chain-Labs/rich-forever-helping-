@@ -214,8 +214,8 @@ export const updateUserBank = async (data) => {
 
 export const changePassword = async (data) => {
   try {
-    const response = await Axios.put(
-      `${origin}/helping/change-password`,
+    const response = await Axios.post(
+      `${origin}/helping/change-helping-password`,
       data,
       {
         headers: { Authorization: `Bearer ${token}` },
@@ -240,7 +240,7 @@ export const contactus = async (data) => {
 };
 export const forgotPassword = async (data) => {
   try {
-    const response = await Axios.post(`${origin}/helping/forgot-password`, data, {
+    const response = await Axios.post(`${origin}/helping/reset-helping-password`, data, {
       headers: { Authorization: `Bearer ${token}` },
     });
     return response.data; // ✅ return only JSON

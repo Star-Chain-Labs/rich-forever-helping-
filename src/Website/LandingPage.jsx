@@ -20,7 +20,7 @@ const LandingPage = () => {
                 <VeganMeaning />
                 {/* <TextSlider /> */}
                 <MarqueeDemo />
-                <Products />
+                {/* <Products /> */}
                 {/* <HomePageAnimation /> */}
                 {/* <Testimonials /> */}
                 <Banner />
