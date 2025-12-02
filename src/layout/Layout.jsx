@@ -92,58 +92,6 @@ const Layout = () => {
       label: "Helping Income History",
       icon: <History />,
     },
-    // { path: Routers.OrderHistory, label: "Order History", icon: <FaHistory /> },
-    // {
-    //   label: "Incentive Income",
-    //   icon: <FaWallet />,
-    //   children: [
-    //     { path: Routers.SelfIncentive, label: "Self Incentive" },
-    //     { path: Routers.SponsorIncentive, label: "Sponsor Incentive" },
-    //   ],
-    // },
-    // {
-    //   label: "Performance Income",
-    //   icon: <FaMoneyBillTrendUp />,
-    //   children: [
-    //     { path: Routers.SelfPerformance, label: "Self Performance" },
-    //     { path: Routers.SponsorPerformance, label: "Sponsor Performance" },
-    //   ],
-    // },
-    // {
-    //   label: "Royal Star Income",
-    //   icon: <FaHistory />,
-    //   children: [
-    //     { path: Routers.RoyalStar, label: "Royal Star Income" },
-    //     { path: Routers.RoyalReferral, label: "Royal Referral Income" },
-    //   ],
-    // },
-
-    // {
-    //   path: Routers.RainbowIncome,
-    //   label: "Rainbow Income",
-    //   icon: <FaMoneyBill1Wave />,
-    // },
-
-    // {
-    //   path: Routers.RoyalClubIncome,
-    //   label: "Royal Club Income",
-    //   icon: <FaMoneyBillWheat />,
-    // },
-
-    // {
-    //   path: Routers.ForeverIncome,
-    //   label: "Forever Income",
-    //   icon: <GiMoneyStack />,
-    // },
-
-    // {
-    //   path: Routers.FieldOfficerIncome,
-    //   label: "Field Officer Income",
-    //   icon: <GiMoneyStack />,
-    // },
-
-    
-
     
     {
       path: Routers.changePassword,

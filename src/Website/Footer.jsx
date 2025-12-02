@@ -67,10 +67,10 @@ const Footer = () => {
               <li>
                 <span className="font-medium">Email:</span>{" "}
                 <a
-                  href="mailto:wirely@gmail.com"
+                  href="mailto:richforever@gmail.com"
                   className="hover:text-green-700 transition"
                 >
-                  wirely@gmail.com
+                  richforever@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">

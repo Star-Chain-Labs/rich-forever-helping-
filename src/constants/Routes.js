@@ -1,10 +1,3 @@
-import ContactUs from "../UserPanel/pages/Contactus/ContactUs";
-import HelpingIncomeHistory from "../UserPanel/pages/HelpingIncomeHistory/HelpingIncomeHistory";
-import MyInvestment from "../UserPanel/pages/MyInvestment/MyInvestment";
-import WithdrawalHistory from "../UserPanel/pages/Payout/WithdrawalHistory";
-import ForgotPassword from "../UserPanel/pages/Register/ForgotPassword";
-import MyDownlines from "../UserPanel/pages/downline/MyDownline";
-import MyGenology from "../UserPanel/pages/downline/MyGenology";
 
 export const Routers = {
   webiste: "/",
